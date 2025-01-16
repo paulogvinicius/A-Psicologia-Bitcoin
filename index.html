@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Psicologia do Bitcoin</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="icone">
+</head>
+<body>
+
+    <section class="home">
+
+        <div class="start" id="formulario">
+
+            <h1>
+                A Psicologia do <span class="destaque"> Bitcoin </span>
+            </h1>
+
+            <h3>
+                lições atemporais sobre dinheiro, aceite a decentralização ou continue ficando pobre aos poucos.
+            </h3>
+
+            <form action="https://nunisoftware.us11.list-manage.com/subscribe/post?u=4bd34994d461a38110ff317ef&amp;id=794aa8c666&amp;f_id=00919be1f0" method="post" 
+            id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
+
+                <label for="name"></label>
+                <input type="text" id="name" name="FNAME" placeholder="Nome*" required>
+                
+                <label for="email"></label>
+                <input type="email" id="email" name="EMAIL" placeholder="Email*" required>
+                
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="PHONE" pattern="[0-9]{11}" placeholder="Celular*" required>
+
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                    <input type="text" name="b_4bd34994d461a38110ff317ef_794aa8c666" tabindex="-1" value="">
+                </div>
+
+                <button type="submit">Pegar Meu E-book Grátis!</button>
+
+            </form>
+        </div>
+
+        <div class="start">
+
+            <img src="imagens/CAPA 3D - A PSICOLOGIA DO BITCOIN.png" alt="">
+
+        </div>
+
+        <script>
+            // Captura o formulário pelo ID
+            const form = document.getElementById('mc-embedded-subscribe-form');
+        
+            // Adiciona um evento de escuta no envio do formulário
+            form.addEventListener('submit', function(event) {
+                // Impede o envio padrão do formulário
+                event.preventDefault();
+                
+                // Obter os campos do formulário
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                
+                // Verificar se todos os campos obrigatórios estão preenchidos
+                if (!name || !email || !phone) {
+                    alert('Por favor, preencha todos os campos obrigatórios!');
+                    return;
+                }
+        
+                // Verificar se o número de telefone é válido (11 dígitos)
+                const phonePattern = /^[0-9]{11}$/;
+                if (!phonePattern.test(phone)) {
+                    alert('Por favor, insira um número de celular válido com 11 dígitos, sem utilizar caracteres como ( ), -, ou espaços.');
+                    return;
+                }
+        
+                // Se a validação passar, aguarda um curto intervalo e redireciona
+                setTimeout(() => {
+                    // Redireciona para a página personalizada
+                    window.location.href = "https://chat.whatsapp.com/DmOloLEf3ki9bSrsr62yJX";
+                }, 1000); // Espera 1 segundo antes de redirecionar
+        
+                // Enviar o formulário para o Mailchimp
+                form.submit(); // Isso envia o formulário para o Mailchimp após a validação
+            });
+        </script>
+
+
+    </section>
+
+    <section class="gratuito">
+
+        <div class="gratis">
+            <h1> Tenha acesso <span class="destaque"> 100% gratuito a:</span> </h1>
+        </div>
+
+    </section>
+
+    <section class="medium">
+
+
+        <div class="center">
+
+            <img src="imagens/CAPA 3D - DEITADA - A PSICOLOGIA DO BITCOIN.png" alt="Imagem Ebook">
+
+        </div>
+
+        <div class="center">
+
+            <img src="imagens/listacorreta.png" alt="Imagem Texto">
+
+        </div>
+
+    </section>
+
+    <section class="end">
+        <button id="fim">
+            Pegar Meu E-book Grátis!
+        </button>
+    </section>
+
+    <!-- JavaScript para rolagem suave -->
+<script>
+    // Seleciona o botão inferior
+    const button = document.getElementById('fim');
+    
+    // Adiciona um evento de clique ao botão
+    button.addEventListener('click', () => {
+        // Seleciona o formulário usando o ID
+        const formulario = document.getElementById('formulario');
+        
+        // Rola suavemente até o formulário
+        formulario.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+    
+</body>
+
+<footer>
+    <section class="redes">
+
+        <div class="redessociais">
+            <img class ="logo" src="imagens/LOGO NUCLEO BITCOIN.png" alt="logo nucleo bitcoin">
+        </div>
+
+    </section>
+</footer>
+
+</html>
+
